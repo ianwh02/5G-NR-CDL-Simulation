@@ -65,12 +65,12 @@ Different CDL profiles produce significantly different throughput characteristic
 | Ideal vs. realistic assumptions | +5.0 dB | +8.0 dB |
 | 10 Hz vs. 100 Hz Doppler | +2.0 dB | +5.0 dB |
 
-### Industry Alignment (4-Layer, Option 3)
+### Industry Alignment — 4-Layer, Option 1Y
 
 <p align="center">
-  <img src="Final_Report/Figures/4layer10doppler.png" alt="Industry throughput comparison — 4 layer, 10 Hz Doppler" width="600">
+  <img src="Final_Report/Figures/comparison_4layer.png" alt="4-layer throughput comparison — This Work vs Nokia, Samsung, MediaTek, Ericsson" width="700">
 </p>
-<p align="center"><em>Full throughput curves from industry vendors (Nokia, BT, MediaTek, Orange) for 8Tx/4Rx, 4-layer, 10 Hz Doppler — used for validating our simulation framework.</em></p>
+<p align="center"><em>Throughput vs. SNR comparison for 4-layer MIMO (Option 1Y, CDL-C, 10 Hz Doppler) — our simulation ("This Work") benchmarked against Nokia, Samsung, MediaTek, and Ericsson from 3GPP RAN4 #113–#115.</em></p>
 
 - At **70% throughput**, simulation results are concordant with industry averages (within 1.7 dB span)
 - At **30% throughput**, a 5.2 dB divergence is attributed to the absence of ray splitting (a TR 38.753 feature not present in TR 38.901)
@@ -79,9 +79,9 @@ Different CDL profiles produce significantly different throughput characteristic
 ### 8-Layer MIMO with Dual Codewords
 
 <p align="center">
-  <img src="Final_Report/Figures/8layer10doppler.png" alt="Industry throughput comparison — 8 layer, 10 Hz Doppler" width="600">
+  <img src="Final_Report/Figures/comparison_8layer.png" alt="8-layer dual-codeword throughput comparison — This Work vs Nokia, MediaTek" width="700">
 </p>
-<p align="center"><em>8Tx/8Rx, 8-layer throughput curves with dual codewords (Nokia, BT) at 10 Hz Doppler. The characteristic "dipping" effect in mid-SNR regions is caused by HARQ retransmission dynamics.</em></p>
+<p align="center"><em>8-layer dual-codeword throughput comparison (CDL-C, 10 Hz Doppler) — our simulation vs. Nokia, MediaTek, and Ericsson. The characteristic "dipping" in mid-SNR regions is caused by HARQ retransmission dynamics with dual codewords.</em></p>
 
 ---
 
