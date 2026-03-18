@@ -1,0 +1,215 @@
+% This file was created by matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+\definecolor{mycolor2}{rgb}{0.85000,0.32500,0.09800}%
+\definecolor{mycolor3}{rgb}{0.92900,0.69400,0.12500}%
+\definecolor{mycolor4}{rgb}{0.49400,0.18400,0.55600}%
+\definecolor{mycolor5}{rgb}{0.46600,0.67400,0.18800}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=0.951\figurewidth,
+height=\figureheight,
+at={(0\figurewidth,0\figureheight)},
+scale only axis,
+xmin=-7,
+xmax=27,
+xlabel style={font=\color{white!15!black}},
+xlabel={SNR (dB)},
+ymin=0,
+ymax=1,
+ylabel style={font=\color{white!15!black}},
+ylabel={Throughput (\%)},
+axis background/.style={fill=white},
+title style={font=\bfseries},
+title={Throughput vs. SNR},
+axis x line*=bottom,
+axis y line*=left,
+xmajorgrids,
+ymajorgrids,
+legend style={at={(0.97,0.03)}, anchor=south east, legend cell align=left, align=left, fill=none, draw=none},
+legend style={font=\scriptsize}
+]
+\addplot [color=mycolor1, line width=1.8pt, mark size=2.0pt, mark=o, mark options={solid, mycolor1}]
+  table[row sep=crcr]{%
+-5.2	0\\
+-4.2	0\\
+-3.2	0\\
+-2.2	0\\
+-1.2	0\\
+-0.2	0.007\\
+0.8	0.025\\
+1.8	0.059\\
+2.8	0.072\\
+3.8	0.075\\
+4.8	0.081\\
+5.8	0.121\\
+6.8	0.162\\
+7.8	0.19\\
+8.8	0.153\\
+9.8	0.115\\
+10.8	0.171\\
+11.8	0.28\\
+12.8	0.422\\
+13.8	0.469\\
+14.8	0.672\\
+15.8	0.898\\
+16.8	0.94\\
+17.8	1\\
+18.8	1\\
+19.8	1\\
+20.8	1\\
+21.8	1\\
+22.8	1\\
+23.8	1\\
+24.8	1\\
+};
+\addlegendentry{Ian Cho}
+
+\addplot [color=mycolor2, dashed, line width=1.8pt, mark size=1.4pt, mark=square, mark options={solid, mycolor2}]
+  table[row sep=crcr]{%
+-5.1	0\\
+-4.1	0\\
+-3.1	0\\
+-2.1	0\\
+-1.1	0.0037\\
+-0.1	0.0252\\
+0.9	0.0434\\
+1.9	0.0672\\
+2.9	0.0786\\
+3.9	0.0977\\
+4.9	0.1219\\
+5.9	0.1995\\
+6.9	0.2976\\
+7.9	0.3391\\
+8.9	0.3711\\
+9.9	0.3958\\
+10.9	0.436\\
+11.9	0.5101\\
+12.9	0.5644\\
+13.9	0.6088\\
+14.9	0.6233\\
+15.9	0.6303\\
+16.9	0.6484\\
+17.9	0.6962\\
+18.9	0.7739\\
+19.9	0.8521\\
+20.9	0.909\\
+21.9	0.9569\\
+22.9	0.9909\\
+23.9	0.9997\\
+24.9	1\\
+};
+\addlegendentry{Nokia}
+
+\addplot [color=mycolor3, dotted, line width=1.8pt, mark size=3.5pt, mark=diamond, mark options={solid, mycolor3}]
+  table[row sep=crcr]{%
+-5	0\\
+-4	0\\
+-3	0\\
+-2	0\\
+-1	0\\
+0	0\\
+1	0\\
+2	0.016533363\\
+3	0.040266749\\
+4	0.072000152\\
+5	0.128800264\\
+6	0.198400691\\
+7	0.273600393\\
+8	0.334133552\\
+9	0.386933613\\
+10	0.4256008\\
+11	0.478134027\\
+12	0.513867735\\
+13	0.54080101\\
+14	0.581067505\\
+15	0.625067979\\
+16	0.685867972\\
+17	0.758134196\\
+18	0.844268155\\
+19	0.916798672\\
+20	0.975205631\\
+21	0.998398997\\
+22	1\\
+23	1\\
+24	1\\
+25	1\\
+};
+\addlegendentry{Samsung}
+
+\addplot [color=mycolor4, dashdotted, line width=1.8pt, mark size=1.3pt, mark=triangle, mark options={solid, mycolor4}]
+  table[row sep=crcr]{%
+-4.9	0\\
+-3.9	0\\
+-2.9	0\\
+-1.9	0\\
+-0.9	0\\
+0.1	0\\
+1.1	0.007734642\\
+2.1	0.02573256\\
+3.1	0.072735386\\
+4.1	0.1535029\\
+5.1	0.24260003\\
+6.1	0.295552581\\
+7.1	0.335118251\\
+8.1	0.371114086\\
+9.1	0.41038227\\
+10.1	0.462739848\\
+11.1	0.493380931\\
+12.1	0.499628142\\
+13.1	0.506767812\\
+14.1	0.520303436\\
+15.1	0.562546482\\
+16.1	0.6453964\\
+17.1	0.749367842\\
+18.1	0.875204522\\
+19.1	0.958649412\\
+20.1	0.989736725\\
+21.1	0.998810055\\
+22.1	1\\
+23.1	1\\
+24.1	1\\
+25.1	1\\
+};
+\addlegendentry{MTK}
+
+\addplot [color=mycolor5, line width=1.8pt, mark size=1.3pt, mark=triangle, mark options={solid, rotate=180, mycolor5}]
+  table[row sep=crcr]{%
+-4.8	0\\
+-3.8	0\\
+-2.8	0\\
+-1.8	0\\
+-0.8	0.001\\
+0.2	0.006\\
+1.2	0.019\\
+2.2	0.0432\\
+3.2	0.0921\\
+4.2	0.1568\\
+5.2	0.2143\\
+6.2	0.2648\\
+7.2	0.3133\\
+8.2	0.3511\\
+9.2	0.3886\\
+10.2	0.4267\\
+11.2	0.4581\\
+12.2	0.4825\\
+13.2	0.5092\\
+14.2	0.5343\\
+15.2	0.5762\\
+16.2	0.6321\\
+17.2	0.719\\
+18.2	0.814\\
+19.2	0.8956\\
+20.2	0.9578\\
+21.2	0.9902\\
+22.2	1\\
+23.2	1\\
+24.2	1\\
+25.2	1\\
+};
+\addlegendentry{Ericsson}
+
+\end{axis}
+\end{tikzpicture}%

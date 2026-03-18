@@ -1,0 +1,104 @@
+% This file was created by matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+\definecolor{mycolor2}{rgb}{0.85000,0.32500,0.09800}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=0.951\figurewidth,
+height=\figureheight,
+at={(0\figurewidth,0\figureheight)},
+scale only axis,
+xmin=-7,
+xmax=27,
+xlabel style={font=\color{white!15!black}},
+xlabel={SNR (dB)},
+ymin=0,
+ymax=100,
+ylabel style={font=\color{white!15!black}},
+ylabel={Throughput (\%)},
+axis background/.style={fill=white},
+title style={font=\bfseries},
+title={Throughput vs. SNR},
+axis x line*=bottom,
+axis y line*=left,
+xmajorgrids,
+ymajorgrids,
+legend style={at={(0.97,0.03)}, anchor=south east, legend cell align=left, align=left, fill=none, draw=none},
+legend style={font=\scriptsize}
+]
+\addplot [color=mycolor1, line width=1.8pt, mark size=2.0pt, mark=o, mark options={solid, mycolor1}]
+  table[row sep=crcr]{%
+-5.05	0\\
+-4.05	0\\
+-3.05	0\\
+-2.05	0\\
+-1.05	0\\
+-0.05	0\\
+0.95	8.98589407592207\\
+1.95	8.12887760857304\\
+2.95	5.67783685452299\\
+3.95	33.0694900197611\\
+4.95	60.5341664959552\\
+5.95	67.3814963476876\\
+6.95	61.7745202188179\\
+7.95	78.8728470011076\\
+8.95	99.4102434232741\\
+9.95	100\\
+10.95	100\\
+11.95	100\\
+12.95	100\\
+13.95	100\\
+14.95	100\\
+15.95	100\\
+16.95	100\\
+17.95	100\\
+18.95	100\\
+19.95	100\\
+20.95	100\\
+21.95	100\\
+22.95	100\\
+23.95	100\\
+24.95	100\\
+};
+\addlegendentry{Ideal case}
+
+\addplot [color=mycolor2, dashed, line width=1.8pt, mark size=1.4pt, mark=square, mark options={solid, mycolor2}]
+  table[row sep=crcr]{%
+-4.95	0\\
+-3.95	0.4\\
+-2.95	1.4\\
+-1.95	2.9\\
+-0.95	5.1\\
+0.05	6.4\\
+1.05	10.7\\
+2.05	9.7\\
+3.05	14.7\\
+4.05	18.6\\
+5.05	18\\
+6.05	14.7\\
+7.05	16.7\\
+8.05	23.1\\
+9.05	29.9\\
+10.05	27.7\\
+11.05	33.8\\
+12.05	48.4\\
+13.05	61.4\\
+14.05	60.1\\
+15.05	68.1\\
+16.05	67.8\\
+17.05	67.6\\
+18.05	83.5\\
+19.05	77.3\\
+20.05	85.8\\
+21.05	95.4\\
+22.05	96.7\\
+23.05	99.8\\
+24.05	100\\
+25.05	100\\
+};
+\addlegendentry{Realistic case}
+
+\end{axis}
+\end{tikzpicture}%

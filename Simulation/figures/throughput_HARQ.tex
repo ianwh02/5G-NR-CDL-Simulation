@@ -1,0 +1,104 @@
+% This file was created by matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+\definecolor{mycolor2}{rgb}{0.85000,0.32500,0.09800}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=0.951\figurewidth,
+height=\figureheight,
+at={(0\figurewidth,0\figureheight)},
+scale only axis,
+xmin=-7,
+xmax=27,
+xlabel style={font=\color{white!15!black}},
+xlabel={SNR (dB)},
+ymin=0,
+ymax=100,
+ylabel style={font=\color{white!15!black}},
+ylabel={Throughput (\%)},
+axis background/.style={fill=white},
+title style={font=\bfseries},
+title={Throughput vs. SNR},
+axis x line*=bottom,
+axis y line*=left,
+xmajorgrids,
+ymajorgrids,
+legend style={at={(0.03,0.97)}, anchor=north west, legend cell align=left, align=left, fill=none, draw=none},
+legend style={font=\scriptsize}
+]
+\addplot [color=mycolor1, line width=1.8pt, mark size=2.0pt, mark=o, mark options={solid, mycolor1}]
+  table[row sep=crcr]{%
+-5.05	0\\
+-4.05	0\\
+-3.05	0\\
+-2.05	0\\
+-1.05	0\\
+-0.05	0\\
+0.95	0\\
+1.95	0\\
+2.95	0\\
+3.95	0\\
+4.95	0\\
+5.95	0\\
+6.95	0\\
+7.95	0\\
+8.95	12.5\\
+9.95	45.5\\
+10.95	54.5\\
+11.95	57\\
+12.95	58.8\\
+13.95	72.5\\
+14.95	89.7\\
+15.95	93.5\\
+16.95	96.5\\
+17.95	98.5\\
+18.95	99.5\\
+19.95	100\\
+20.95	100\\
+21.95	100\\
+22.95	100\\
+23.95	100\\
+24.95	100\\
+};
+\addlegendentry{no HARQ}
+
+\addplot [color=mycolor2, dashed, line width=1.8pt, mark size=1.4pt, mark=square, mark options={solid, mycolor2}]
+  table[row sep=crcr]{%
+-4.95	0.2\\
+-3.95	1.2\\
+-2.95	3\\
+-1.95	4.3\\
+-0.95	5.9\\
+0.05	4\\
+1.05	10\\
+2.05	11.2\\
+3.05	15.8\\
+4.05	10.9\\
+5.05	19.8\\
+6.05	20.8\\
+7.05	26.8\\
+8.05	35.6\\
+9.05	37\\
+10.05	53.9\\
+11.05	63.2\\
+12.05	69.3\\
+13.05	73.6\\
+14.05	77.5\\
+15.05	80.7\\
+16.05	88.7\\
+17.05	87.1\\
+18.05	99.2\\
+19.05	99.4\\
+20.05	100\\
+21.05	100\\
+22.05	100\\
+23.05	100\\
+24.05	100\\
+25.05	100\\
+};
+\addlegendentry{HARQ}
+
+\end{axis}
+\end{tikzpicture}%

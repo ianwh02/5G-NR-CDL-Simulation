@@ -1,0 +1,107 @@
+% This file was created by matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+\definecolor{mycolor2}{rgb}{0.85000,0.32500,0.09800}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=0.951\figurewidth,
+height=\figureheight,
+at={(0\figurewidth,0\figureheight)},
+scale only axis,
+xmin=-7,
+xmax=27,
+xlabel style={font=\color{white!15!black}},
+xlabel={SNR (dB)},
+ymode=log,
+ymin=0.001,
+ymax=1,
+yminorticks=true,
+ylabel style={font=\color{white!15!black}},
+ylabel={BLER},
+axis background/.style={fill=white},
+title style={font=\bfseries},
+title={BLER vs. SNR},
+axis x line*=bottom,
+axis y line*=left,
+xmajorgrids,
+ymajorgrids,
+yminorgrids,
+legend style={at={(0.03,0.03)}, anchor=south west, legend cell align=left, align=left, fill=none, draw=none},
+legend style={font=\scriptsize}
+]
+\addplot [color=mycolor1, line width=1.8pt, mark size=2.0pt, mark=o, mark options={solid, mycolor1}]
+  table[row sep=crcr]{%
+-5.05	1\\
+-4.05	1\\
+-3.05	1\\
+-2.05	1\\
+-1.05	1\\
+-0.05	1\\
+0.95	0.867\\
+1.95	0.88\\
+2.95	0.915\\
+3.95	0.641\\
+4.95	0.365\\
+5.95	0.27\\
+6.95	0.334\\
+7.95	0.185\\
+8.95	0.005\\
+9.95	0\\
+10.95	0\\
+11.95	0\\
+12.95	0\\
+13.95	0\\
+14.95	0\\
+15.95	0\\
+16.95	0\\
+17.95	0\\
+18.95	0\\
+19.95	0\\
+20.95	0\\
+21.95	0\\
+22.95	0\\
+23.95	0\\
+24.95	0\\
+};
+\addlegendentry{Ideal case}
+
+\addplot [color=mycolor2, dashed, line width=1.8pt, mark size=1.4pt, mark=square, mark options={solid, mycolor2}]
+  table[row sep=crcr]{%
+-4.95	1\\
+-3.95	0.996\\
+-2.95	0.986\\
+-1.95	0.971\\
+-0.95	0.949\\
+0.05	0.936\\
+1.05	0.893\\
+2.05	0.903\\
+3.05	0.853\\
+4.05	0.814\\
+5.05	0.82\\
+6.05	0.853\\
+7.05	0.833\\
+8.05	0.769\\
+9.05	0.701\\
+10.05	0.723\\
+11.05	0.662\\
+12.05	0.516\\
+13.05	0.386\\
+14.05	0.399\\
+15.05	0.319\\
+16.05	0.322\\
+17.05	0.324\\
+18.05	0.165\\
+19.05	0.227\\
+20.05	0.142\\
+21.05	0.046\\
+22.05	0.033\\
+23.05	0.002\\
+24.05	0\\
+25.05	0\\
+};
+\addlegendentry{Realistic case}
+
+\end{axis}
+\end{tikzpicture}%

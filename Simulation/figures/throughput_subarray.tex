@@ -1,0 +1,104 @@
+% This file was created by matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+\definecolor{mycolor2}{rgb}{0.85000,0.32500,0.09800}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=0.951\figurewidth,
+height=\figureheight,
+at={(0\figurewidth,0\figureheight)},
+scale only axis,
+xmin=-7,
+xmax=27,
+xlabel style={font=\color{white!15!black}},
+xlabel={SNR (dB)},
+ymin=0,
+ymax=100,
+ylabel style={font=\color{white!15!black}},
+ylabel={Throughput (\%)},
+axis background/.style={fill=white},
+title style={font=\bfseries},
+title={Throughput vs. SNR},
+axis x line*=bottom,
+axis y line*=left,
+xmajorgrids,
+ymajorgrids,
+legend style={at={(0.03,0.97)}, anchor=north west, legend cell align=left, align=left, fill=none, draw=none},
+legend style={font=\scriptsize}
+]
+\addplot [color=mycolor1, line width=1.8pt, mark size=2.0pt, mark=o, mark options={solid, mycolor1}]
+  table[row sep=crcr]{%
+-5.05	21.8239491162942\\
+-4.05	13.936913577139\\
+-3.05	17.2476712887968\\
+-2.05	23.3251333811957\\
+-1.05	23.6257163131962\\
+-0.05	27.4089941747573\\
+0.95	30.4502967580304\\
+1.95	37.4905464483282\\
+2.95	38.9389485535865\\
+3.95	50.1810765557267\\
+4.95	58.0990740514259\\
+5.95	68.7622833800527\\
+6.95	58.6060284145627\\
+7.95	55.9406925044966\\
+8.95	67.0505520254576\\
+9.95	63.5179418869199\\
+10.95	67.2267003919171\\
+11.95	80.4672418835917\\
+12.95	96.7253436966086\\
+13.95	99.2170550378238\\
+14.95	100\\
+15.95	100\\
+16.95	100\\
+17.95	100\\
+18.95	100\\
+19.95	100\\
+20.95	100\\
+21.95	100\\
+22.95	100\\
+23.95	100\\
+24.95	100\\
+};
+\addlegendentry{Option 3 perfect CSI}
+
+\addplot [color=mycolor2, dashed, line width=1.8pt, mark size=1.4pt, mark=square, mark options={solid, mycolor2}]
+  table[row sep=crcr]{%
+-4.95	0\\
+-3.95	0\\
+-2.95	0\\
+-1.95	0\\
+-0.95	0\\
+0.05	1.6\\
+1.05	2.8\\
+2.05	5.5\\
+3.05	8.6\\
+4.05	7.84957575560927\\
+5.05	12.0155912177594\\
+6.05	6.7240523431063\\
+7.05	7.15749109832922\\
+8.05	8.58592096778588\\
+9.05	10.2866511769049\\
+10.05	13.9940486704621\\
+11.05	16.8844956983342\\
+12.05	25.8\\
+13.05	26\\
+14.05	25.3\\
+15.05	35.5\\
+16.05	47.5\\
+17.05	48.1913368864629\\
+18.05	75.1\\
+19.05	93.7526085762418\\
+20.05	100\\
+21.05	100\\
+22.05	100\\
+23.05	100\\
+24.05	100\\
+25.05	100\\
+};
+\addlegendentry{Option 1Y perfect CSI}
+
+\end{axis}
+\end{tikzpicture}%

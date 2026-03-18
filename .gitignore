@@ -1,0 +1,31 @@
+# MATLAB artifacts
+*.asv
+*.m~
+*.slx.bak
+*.autosave
+*.mlappinstall
+
+# Simulation results (large .mat files, regenerated at runtime)
+Simulation/results/*.mat
+
+# 3GPP industry data (confidential vendor documents)
+Final_Report/Company_Data/
+
+# Temporary files
+extract_pdf.py
+
+# OS files
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Excel and Word temp files
+~$*.xlsx
+~$*.docx
+~$*.pptx

@@ -1,0 +1,255 @@
+% This file was created by matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+\definecolor{mycolor2}{rgb}{0.85000,0.32500,0.09800}%
+\definecolor{mycolor3}{rgb}{0.92900,0.69400,0.12500}%
+\definecolor{mycolor4}{rgb}{0.49400,0.18400,0.55600}%
+\definecolor{mycolor5}{rgb}{0.46600,0.67400,0.18800}%
+\definecolor{mycolor6}{rgb}{0.30100,0.74500,0.93300}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=0.951\figurewidth,
+height=\figureheight,
+at={(0\figurewidth,0\figureheight)},
+scale only axis,
+xmin=-7,
+xmax=27,
+xlabel style={font=\color{white!15!black}},
+xlabel={SNR (dB)},
+ymode=log,
+ymin=0.001,
+ymax=1,
+yminorticks=true,
+ylabel style={font=\color{white!15!black}},
+ylabel={BLER},
+axis background/.style={fill=white},
+title style={font=\bfseries},
+title={BLER vs. SNR},
+axis x line*=bottom,
+axis y line*=left,
+xmajorgrids,
+ymajorgrids,
+yminorgrids,
+legend style={at={(0.03,0.03)}, anchor=south west, legend cell align=left, align=left, fill=none, draw=none},
+legend style={font=\scriptsize}
+]
+\addplot [color=mycolor1, line width=1.8pt, mark size=2.0pt, mark=o, mark options={solid, mycolor1}]
+  table[row sep=crcr]{%
+-5.25	0\\
+-4.25	0\\
+-3.25	0\\
+-2.25	0\\
+-1.25	0\\
+-0.25	0\\
+0.75	0\\
+1.75	0\\
+2.75	0\\
+3.75	0\\
+4.75	0\\
+5.75	0\\
+6.75	0\\
+7.75	0\\
+8.75	0\\
+9.75	0\\
+10.75	0\\
+11.75	0\\
+12.75	0.002\\
+13.75	0.007\\
+14.75	0.008\\
+15.75	0\\
+16.75	0.001\\
+17.75	0.004\\
+18.75	0.003\\
+19.75	0.001\\
+20.75	0\\
+21.75	0\\
+22.75	0\\
+23.75	0\\
+24.75	0\\
+};
+\addlegendentry{Perfect CSI}
+
+\addplot [color=mycolor2, dashed, line width=1.8pt, mark size=1.4pt, mark=square, mark options={solid, mycolor2}]
+  table[row sep=crcr]{%
+-5.15	0\\
+-4.15	0\\
+-3.15	0\\
+-2.15	0\\
+-1.15	0\\
+-0.15	0\\
+0.85	0\\
+1.85	0\\
+2.85	0\\
+3.85	0\\
+4.85	0\\
+5.85	0\\
+6.85	0\\
+7.85	0\\
+8.85	0\\
+9.85	0\\
+10.85	0\\
+11.85	0\\
+12.85	0\\
+13.85	0.001\\
+14.85	0.004\\
+15.85	0\\
+16.85	0.003\\
+17.85	0.006\\
+18.85	0.016\\
+19.85	0.007\\
+20.85	0.003\\
+21.85	0.002\\
+22.85	0\\
+23.85	0\\
+24.85	0\\
+};
+\addlegendentry{RI, PMI follow, and CQI}
+
+\addplot [color=mycolor3, dotted, line width=1.8pt, mark size=3.5pt, mark=diamond, mark options={solid, mycolor3}]
+  table[row sep=crcr]{%
+-5.05	1\\
+-4.05	1\\
+-3.05	1\\
+-2.05	1\\
+-1.05	0.995\\
+-0.05	1\\
+0.95	0.952\\
+1.95	0.825\\
+2.95	0.824\\
+3.95	0.595\\
+4.95	0.433\\
+5.95	0.318\\
+6.95	0.285\\
+7.95	0.185\\
+8.95	0.018\\
+9.95	0.027\\
+10.95	0\\
+11.95	0\\
+12.95	0\\
+13.95	0\\
+14.95	0\\
+15.95	0\\
+16.95	0\\
+17.95	0\\
+18.95	0\\
+19.95	0\\
+20.95	0\\
+21.95	0\\
+22.95	0\\
+23.95	0\\
+24.95	0\\
+};
+\addlegendentry{RI and PMI follow}
+
+\addplot [color=mycolor4, dashdotted, line width=1.8pt, mark size=1.3pt, mark=triangle, mark options={solid, mycolor4}]
+  table[row sep=crcr]{%
+-4.95	1\\
+-3.95	1\\
+-2.95	1\\
+-1.95	1\\
+-0.95	0.995\\
+0.05	1\\
+1.05	0.952\\
+2.05	0.836\\
+3.05	0.826\\
+4.05	0.605\\
+5.05	0.446\\
+6.05	0.336\\
+7.05	0.301\\
+8.05	0.197\\
+9.05	0.034\\
+10.05	0.028\\
+11.05	0\\
+12.05	0\\
+13.05	0\\
+14.05	0\\
+15.05	0\\
+16.05	0\\
+17.05	0\\
+18.05	0\\
+19.05	0\\
+20.05	0\\
+21.05	0\\
+22.05	0\\
+23.05	0\\
+24.05	0\\
+25.05	0\\
+};
+\addlegendentry{RI and PMI random}
+
+\addplot [color=mycolor5, line width=1.8pt, mark size=1.3pt, mark=triangle, mark options={solid, rotate=180, mycolor5}]
+  table[row sep=crcr]{%
+-4.85	1\\
+-3.85	1\\
+-2.85	1\\
+-1.85	1\\
+-0.85	1\\
+0.15	1\\
+1.15	1\\
+2.15	1\\
+3.15	1\\
+4.15	1\\
+5.15	1\\
+6.15	1\\
+7.15	1\\
+8.15	1\\
+9.15	0.876\\
+10.15	0.55\\
+11.15	0.453\\
+12.15	0.43\\
+13.15	0.412\\
+14.15	0.283\\
+15.15	0.107\\
+16.15	0.065\\
+17.15	0.037\\
+18.15	0.016\\
+19.15	0.005\\
+20.15	0\\
+21.15	0\\
+22.15	0\\
+23.15	0\\
+24.15	0\\
+25.15	0\\
+};
+\addlegendentry{Fixed RI and PMI follow}
+
+\addplot [color=mycolor6, dashed, line width=1.8pt, mark size=1.3pt, mark=triangle, mark options={solid, rotate=270, mycolor6}]
+  table[row sep=crcr]{%
+-4.75	1\\
+-3.75	1\\
+-2.75	1\\
+-1.75	1\\
+-0.75	1\\
+0.25	1\\
+1.25	1\\
+2.25	1\\
+3.25	1\\
+4.25	1\\
+5.25	1\\
+6.25	1\\
+7.25	1\\
+8.25	1\\
+9.25	0.875\\
+10.25	0.545\\
+11.25	0.455\\
+12.25	0.43\\
+13.25	0.412\\
+14.25	0.275\\
+15.25	0.103\\
+16.25	0.065\\
+17.25	0.035\\
+18.25	0.015\\
+19.25	0.005\\
+20.25	0\\
+21.25	0\\
+22.25	0\\
+23.25	0\\
+24.25	0\\
+25.25	0\\
+};
+\addlegendentry{Fixed RI and PMI random}
+
+\end{axis}
+\end{tikzpicture}%

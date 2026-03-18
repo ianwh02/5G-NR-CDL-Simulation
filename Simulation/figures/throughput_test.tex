@@ -1,0 +1,141 @@
+% This file was created by matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+\definecolor{mycolor2}{rgb}{0.85000,0.32500,0.09800}%
+\definecolor{mycolor3}{rgb}{0.92900,0.69400,0.12500}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=0.951\figurewidth,
+height=\figureheight,
+at={(0\figurewidth,0\figureheight)},
+scale only axis,
+xmin=-7,
+xmax=27,
+xlabel style={font=\color{white!15!black}},
+xlabel={SNR (dB)},
+ymin=0,
+ymax=100,
+ylabel style={font=\color{white!15!black}},
+ylabel={Throughput (\%)},
+axis background/.style={fill=white},
+title style={font=\bfseries},
+title={Throughput vs. SNR},
+axis x line*=bottom,
+axis y line*=left,
+xmajorgrids,
+ymajorgrids,
+legend style={at={(0.97,0.03)}, anchor=south east, legend cell align=left, align=left, fill=none, draw=none},
+legend style={font=\scriptsize}
+]
+\addplot [color=mycolor1, line width=1.8pt, mark size=2.0pt, mark=o, mark options={solid, mycolor1}]
+  table[row sep=crcr]{%
+-5.1	0\\
+-4.1	0\\
+-3.1	0\\
+-2.1	0\\
+-1.1	0\\
+-0.1	0\\
+0.9	0\\
+1.9	0\\
+2.9	0\\
+3.9	5.52372415984025\\
+4.9	6.25048144819617\\
+5.9	6.25048144819617\\
+6.9	6.25048144819617\\
+7.9	5.52372415984025\\
+8.9	6.25048144819617\\
+9.9	12.5009628963923\\
+10.9	22.094896639361\\
+11.9	27.6186207992013\\
+12.9	33.1423449590415\\
+13.9	33.1423449590415\\
+14.9	66.284689918083\\
+15.9	66.284689918083\\
+16.9	66.284689918083\\
+17.9	66.284689918083\\
+18.9	100\\
+19.9	100\\
+20.9	100\\
+21.9	100\\
+22.9	100\\
+23.9	100\\
+24.9	100\\
+};
+\addlegendentry{4Tx/4Rx, 4 Layer, RI}
+
+\addplot [color=mycolor2, dashed, line width=1.8pt, mark size=1.4pt, mark=square, mark options={solid, mycolor2}]
+  table[row sep=crcr]{%
+-5	0\\
+-4	0\\
+-3	0\\
+-2	0\\
+-1	0\\
+0	0.7\\
+1	2.5\\
+2	5.9\\
+3	7.2\\
+4	7.5\\
+5	8.1\\
+6	12.1\\
+7	16.2\\
+8	19\\
+9	15.3\\
+10	11.5\\
+11	17.1\\
+12	28\\
+13	42.2\\
+14	46.9\\
+15	67.2\\
+16	89.8\\
+17	94\\
+18	100\\
+19	100\\
+20	100\\
+21	100\\
+22	100\\
+23	100\\
+24	100\\
+25	100\\
+};
+\addlegendentry{4Tx/4Rx, 4 Layer}
+
+\addplot [color=mycolor3, dotted, line width=1.8pt, mark size=3.5pt, mark=diamond, mark options={solid, mycolor3}]
+  table[row sep=crcr]{%
+-4.9	0.2\\
+-3.9	1.2\\
+-2.9	3\\
+-1.9	4.3\\
+-0.9	5.9\\
+0.1	4\\
+1.1	10\\
+2.1	11.2\\
+3.1	15.8\\
+4.1	10.9\\
+5.1	19.8\\
+6.1	20.8\\
+7.1	26.8\\
+8.1	35.6\\
+9.1	37\\
+10.1	53.9\\
+11.1	63.2\\
+12.1	69.3\\
+13.1	73.6\\
+14.1	77.5\\
+15.1	80.7\\
+16.1	88.7\\
+17.1	87.1\\
+18.1	99.2\\
+19.1	99.4\\
+20.1	100\\
+21.1	100\\
+22.1	100\\
+23.1	100\\
+24.1	100\\
+25.1	100\\
+};
+\addlegendentry{8Tx/4Rx, 4 Layer}
+
+\end{axis}
+\end{tikzpicture}%
