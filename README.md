@@ -112,9 +112,12 @@ NokiaIIBProject/
 └── Simulation/
     ├── README.md                      # Simulation-specific notes
     │
-    ├── pp_throughput_withCSIwithHARQwithsubarray.m   # Main simulation (Option 1Y, subarray)
-    ├── throughput_withCSIwithHARQ.m                  # Option 3 simulation (no subarray)
-    ├── pp_throughput_withCSIwithHARQ.m               # Parallelised Option 3
+    │   # Main simulation scripts
+    ├── pp_throughput_withCSIwithHARQwithsubarray.m   # Final: Option 1Y, 512-element subarray (Section 4.5)
+    ├── throughput_withCSIwithHARQ.m                  # Option 3 with HARQ (Sections 4.1.2–4.4)
+    ├── throughput_withCSInoHARQ.m                    # Baseline without HARQ (Section 4.1.2)
+    ├── pp2_throughput_withCSIwithHARQ.m              # 8-layer dual-codeword variant (Section 4.4)
+    ├── pp3_throughput_withCSIwithHARQ.m              # TDL channel variant with TDL compatibility
     ├── plotPerformanceMetrics.m                      # Post-processing and plotting
     │
     ├── HARQEntity.m                   # HARQ process state machine
@@ -158,11 +161,13 @@ NokiaIIBProject/
 
 3. **Run the main script** — choose based on your scenario:
 
-   | Script | Scenario |
-   |--------|----------|
-   | `pp_throughput_withCSIwithHARQwithsubarray.m` | **Final version** — Option 1Y, 512-element subarray, 4-layer |
-   | `throughput_withCSIwithHARQ.m` | Option 3, 8-layer, sequential execution |
-   | `pp_throughput_withCSIwithHARQ.m` | Option 3, parallelised with `parfor` |
+   | Script | Scenario | Dissertation Section |
+   |--------|----------|---------------------|
+   | `pp_throughput_withCSIwithHARQwithsubarray.m` | **Final** — Option 1Y, 512-element subarray, 4-layer | 4.5 |
+   | `throughput_withCSIwithHARQ.m` | Option 3 with HARQ, CSI, channel estimation | 4.1.2–4.4 |
+   | `throughput_withCSInoHARQ.m` | Baseline without HARQ (for measuring HARQ impact) | 4.1.2 |
+   | `pp2_throughput_withCSIwithHARQ.m` | 8-layer dual-codeword, imperfect estimator, 50 frames | 4.4 |
+   | `pp3_throughput_withCSIwithHARQ.m` | TDL-C channel variant | — |
 
 4. **Configure parameters** at the top of the script (see [Configuration](#configuration) below).
 
