@@ -153,8 +153,8 @@ NokiaIIBProject/
 
 1. **Clone** the repository:
    ```bash
-   git clone https://github.com/ianwh02/NokiaIIBProject.git
-   cd NokiaIIBProject/Simulation
+   git clone https://github.com/ianwh02/5G-NR-CDL-Simulation.git
+   cd 5G-NR-CDL-Simulation/Simulation
    ```
 
 2. **Open MATLAB** and navigate to the `Simulation/` directory.
